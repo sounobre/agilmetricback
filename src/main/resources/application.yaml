@@ -19,3 +19,7 @@ spring:
             hibernate:
                 show_sql: true
         database-platform: org.hibernate.dialect.PostgreSQLDialect
+postgresql://postgres:jbXpNhRoMaCfoIgIePfKYSHDODCnKckG@viaduct:
+    proxy:
+        rlwy:
+            net:51342/railway:
