@@ -6,9 +6,9 @@ server:
 spring:
     datasource:
         #url: jdbc:postgresql://localhost:5432/agilmetric
-        url: jdbc:postgresql://${{PG_HOST_URL}}:${{PG_PORT_NUMBER}}/${{PGDATABASE}}
-        username: ${{PGUSER}}
-        password: ${{PGPASSWORD}}
+        url: jdbc:postgresql://${PG_HOST_URL}:${PG_PORT_NUMBER}/${PGDATABASE}
+        username: ${PGUSER}
+        password: ${PGPASSWORD}
     jpa:
         hibernate:
             ddl-auto: update
