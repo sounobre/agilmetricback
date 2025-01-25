@@ -1,0 +1,19 @@
+server:
+    port: 8080
+   #     servlet:
+       # context-path: "/agilmetric/"
+
+spring:
+    datasource:
+        url: jdbc:postgresql://localhost:5432/agilmetric
+        username: postgres
+        password: 123456
+    jpa:
+        hibernate:
+            ddl-auto: update
+            dialect: org.hibernate.dialect.PostgreSQLDialect
+            jdbc:
+                lob.non-contextual-creation: true
+        properties:
+            hibernate:
+                show_sql: true
