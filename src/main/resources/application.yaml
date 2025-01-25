@@ -6,7 +6,7 @@ server:
 spring:
     datasource:
         #url: jdbc:postgresql://localhost:5432/agilmetric
-        url: jdbc:postgresql://${{RAILWAY_TCP_PROXY_DOMAIN}}:${{RAILWAY_TCP_PROXY_PORT}}/${{PGDATABASE}}
+        url: jdbc:postgresql://${{PG_HOST_URL}}:${{PG_PORT_NUMBER}}/${{PGDATABASE}}
         username: ${{PGUSER}}
         password: ${{PGPASSWORD}}
     jpa:
