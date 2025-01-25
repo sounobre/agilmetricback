@@ -6,8 +6,8 @@ server:
 spring:
     datasource:
         #url: jdbc:postgresql://localhost:5432/agilmetric
-        url: jdbc:postgresql://${{PGUSER}}:${{POSTGRES_PASSWORD}}@${{RAILWAY_PRIVATE_DOMAIN}}:5432/${{PGDATABASE}}
-        username: ${{PGUSER}}
+        url: jdbc:postgresql://${{RAILWAY_PRIVATE_DOMAIN}}:5432/${{PGDATABASE}}
+        username: ${{POSTGRES_USER}}
         password: ${{POSTGRES_PASSWORD}}
     jpa:
         hibernate:
